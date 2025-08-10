@@ -1,16 +1,67 @@
-# AirBnb Price Regressor
-Overview of models and techniques for Airbnb nightly price prediction
+# Airbnb Price Regressor
 
-## How It's Made:
+A machine learning project to predict nightly Airbnb prices using various regression models and feature engineering techniques.
 
-**Tech used:** Pandas, Scikit-learn, Python, Jupyter
+---
 
-I used Pandas for data cleaning and tabularization. For the data analysis, I used seaborn and matplotlib to visualize trends and outliers in the data. The, using scikit-learn I preprocessed the data and tested various models including, Linear Regression, Gradient Boosted Decision Trees, and Random Forest.
+## 📌 Overview
+- **Goal:** Predict nightly Airbnb listing prices.
+- **Data:** Airbnb dataset with features like room type, amenities, location, and more.
+- **Models tested:**
+  - Linear Regression
+  - Gradient Boosted Decision Trees (GBDT)
+  - Random Forest
 
-## Optimizations
+---
 
-Performed feature engineering on features such as Room Type and Amenities to increase the predictive power of these features. Parsed strings into sets for quick lookup time when one hot encoding. 
+## 🛠 Tech Stack
+- **Languages & Tools:** Python, Jupyter Notebook  
+- **Libraries:**  
+  - Pandas → Data cleaning & tabular processing  
+  - Scikit-learn → Model building, preprocessing, evaluation  
+  - Matplotlib / Seaborn → Data visualization & trend analysis  
 
-## Lessons Learned:
+---
 
-This was my first time doing a full-scale project encompassing the entire ML pipeline. I learned about the importance of data preprocessing in order to make the data usuable for various different models. Additionally, I learned the importance of feature engineering in order to increase the effectiveness of the model when given limited features. I deepened my understanding of the various tradeoffs of using simple models such as linear regression compared to more complex ones such as GBDT. All in all, this project has encouraged to me explore more useful applications of AI/ML in my day-to-day life.
+## ⚙ How It Works
+1. **Data Cleaning & Preparation**  
+   - Removed invalid/missing entries.  
+   - Converted categorical variables (e.g., room type) into numerical form using one-hot encoding.  
+   - Parsed amenities from strings into sets for efficient lookup.
+
+2. **Exploratory Data Analysis (EDA)**  
+   - Visualized price distribution, outliers, and trends.  
+   - Examined relationships between features (e.g., room type, location) and price.
+
+3. **Feature Engineering**  
+   - Extracted additional features from existing columns (e.g., count of amenities).  
+   - Improved categorical encoding for better predictive performance.
+
+4. **Model Training & Testing**  
+   - Applied scaling and encoding pipelines.  
+   - Trained and compared multiple regression models.  
+   - Evaluated performance using metrics such as RMSE and R².
+
+---
+
+## 🚀 Optimizations
+- Enhanced categorical feature encoding for **Room Type** and **Amenities**.  
+- Used **parsed string-to-set** conversions before one-hot encoding for faster processing.  
+- Performed hyperparameter tuning for GBDT and Random Forest to improve accuracy.
+
+---
+
+## 📚 Lessons Learned
+- **Data preprocessing** is critical for making datasets usable across different models.  
+- **Feature engineering** can greatly boost performance when data is limited.  
+- Learned trade-offs:
+  - **Linear Regression** → Simple, interpretable, but less flexible.  
+  - **GBDT / Random Forest** → Higher accuracy, handles non-linearities, but more complex and harder to interpret.  
+- Gained confidence in building **end-to-end ML pipelines**.  
+- Inspired to explore more **practical AI/ML applications**.
+
+---
+
+## 📈 Potential Future Improvements
+- Include geospatial features such as distance to city center.  
+- Try deep learning models for potential accuracy gains.  

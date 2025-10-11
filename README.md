@@ -4,7 +4,7 @@ A machine learning project to predict nightly Airbnb prices using various regres
 
 ---
 
-## 📌 Overview
+## Overview
 - **Goal:** Predict nightly Airbnb listing prices.
 - **Data:** Airbnb dataset with features like room type, amenities, location, and more.
 - **Models tested:**
@@ -14,7 +14,7 @@ A machine learning project to predict nightly Airbnb prices using various regres
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 - **Languages & Tools:** Python, Jupyter Notebook  
 - **Libraries:**  
   - Pandas → Data cleaning & tabular processing  
@@ -23,7 +23,7 @@ A machine learning project to predict nightly Airbnb prices using various regres
 
 ---
 
-## ⚙ How It Works
+## How It Works
 1. **Data Cleaning & Preparation**  
    - Removed invalid/missing entries.  
    - Converted categorical variables (e.g., room type) into numerical form using one-hot encoding.  
@@ -44,7 +44,7 @@ A machine learning project to predict nightly Airbnb prices using various regres
 
 ---
 
-## 🚀 Optimizations
+## Optimizations
 - Enhanced categorical feature encoding for **Room Type** and **Amenities**.  
 - Used **parsed string-to-set** conversions before one-hot encoding for faster processing.  
 - Performed hyperparameter tuning for GBDT and Random Forest to improve accuracy.

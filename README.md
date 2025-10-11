@@ -51,7 +51,7 @@ A machine learning project to predict nightly Airbnb prices using various regres
 
 ---
 
-## 📚 Lessons Learned
+## Lessons Learned
 - **Data preprocessing** is critical for making datasets usable across different models.  
 - **Feature engineering** can greatly boost performance when data is limited.  
 - Learned trade-offs:
@@ -62,6 +62,6 @@ A machine learning project to predict nightly Airbnb prices using various regres
 
 ---
 
-## 📈 Potential Future Improvements
+## Potential Future Improvements
 - Include geospatial features such as distance to city center.  
 - Try deep learning models for potential accuracy gains.  
